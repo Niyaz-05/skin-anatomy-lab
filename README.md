@@ -1,5 +1,7 @@
 # Human Skin — Interactive 3D Learning Lab
 
+**Live:** https://skin-anatomy-lab.vercel.app
+
 An interactive 3D integumentary system for university anatomy, histology, physiology, medicine and nursing students: the whole body surface (rule-of-nines regions, dermatomes) and a 6 × 4 mm block of thin and thick skin down to the deep fascia, modelled at true histological scale (1 mm of skin = 1 cm on screen). Works on phones and tablets.
 
 - **Two scenes.** *Skin block* (default) and *Body*, switched from the dock. Clicking a region of the body opens the block there (palms and soles open on thick skin).
