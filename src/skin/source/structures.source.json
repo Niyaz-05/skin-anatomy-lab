@@ -1,0 +1,224 @@
+{
+  "$comment": "Skin structures and where their geometry comes from. bp3d: BodyParts3D 4.0 part ids (Human Atlas build). modelled: built in code by tools/make-skin.mjs from the dimensions in provenance.json.",
+  "structures": [
+    {
+      "id": "body-skin",
+      "scene": "body",
+      "layer": "body",
+      "bp3d": [
+        "FJ2810"
+      ],
+      "note": "BodyParts3D skin surface, welded and simplified to about 28,000 triangles; per-vertex rule-of-nines region and dermatome labels added."
+    },
+    {
+      "id": "scalp-hair",
+      "scene": "body",
+      "layer": "body",
+      "bp3d": [
+        "FJ2813"
+      ],
+      "note": "BodyParts3D hair of head, welded."
+    },
+    {
+      "id": "pubic-hair",
+      "scene": "body",
+      "layer": "body",
+      "bp3d": [
+        "FJ2815"
+      ],
+      "note": "BodyParts3D pubic hair, welded."
+    },
+    {
+      "id": "stratum-corneum",
+      "scene": "block",
+      "layer": "epidermis",
+      "modelled": "Anucleate keratinised squames: 18 µm on thin skin, 400 µm on thick skin; the surface carries polygonal creases (thin) and friction ridges 0.46 mm apart (thick), with pores and the follicular ostium."
+    },
+    {
+      "id": "stratum-lucidum",
+      "scene": "block",
+      "layer": "epidermis",
+      "modelled": "Clear eosinophilic band of thick skin only, 35 µm, fading out at the thin–thick boundary."
+    },
+    {
+      "id": "stratum-granulosum",
+      "scene": "block",
+      "layer": "epidermis",
+      "modelled": "Keratohyalin-granule layer, 8 µm (1–2 cells) on thin skin to 35 µm on thick skin."
+    },
+    {
+      "id": "stratum-spinosum",
+      "scene": "block",
+      "layer": "epidermis",
+      "modelled": "Prickle-cell layer: fills the rete ridges between the dermal papillae; flat on top, following the basal layer below."
+    },
+    {
+      "id": "stratum-basale",
+      "scene": "block",
+      "layer": "epidermis",
+      "modelled": "One cell (11–16 µm) on the basement membrane, following every papilla."
+    },
+    {
+      "id": "melanocytes",
+      "scene": "block",
+      "layer": "epidermis",
+      "modelled": "Dendritic pigment cells on the basement membrane, dendrites reaching up between keratinocytes; 3084 instances (about 1 in 7 of the real ~1,000–1,500 per mm²; fewer on palms)."
+    },
+    {
+      "id": "langerhans-cells",
+      "scene": "block",
+      "layer": "epidermis",
+      "modelled": "Dendritic antigen-presenting cells in the spinous layer, dendrites spread between keratinocytes; 1675 instances (about 1 in 7 of the real ~460–1,000 per mm²)."
+    },
+    {
+      "id": "papillary-dermis",
+      "scene": "block",
+      "layer": "dermis",
+      "modelled": "Loose connective tissue of the dermal papillae and the band beneath; thin skin: low papillae ~0.06 mm high about 0.1 mm apart; thick skin: double rows of papillae between primary and secondary rete ridges."
+    },
+    {
+      "id": "reticular-dermis",
+      "scene": "block",
+      "layer": "dermis",
+      "modelled": "Dense irregular connective tissue down to 2.05 mm (thin) / 3.05 mm (thick) below the surface; fat domes rise into its base."
+    },
+    {
+      "id": "collagen-bundles",
+      "scene": "block",
+      "layer": "dermis",
+      "modelled": "49 representative type I collagen bundles (~45–60 µm) interwoven in layers roughly parallel to the surface (real bundles are far more numerous; the reticular dermis texture shows the rest)."
+    },
+    {
+      "id": "subcutaneous-fat",
+      "scene": "block",
+      "layer": "hypodermis",
+      "modelled": "Adipose tissue from the dermis to the deep fascia at 5.25 mm."
+    },
+    {
+      "id": "fibrous-septa",
+      "scene": "block",
+      "layer": "hypodermis",
+      "modelled": "Connective-tissue septa (retinacula cutis) ~0.1 mm thick dividing the fat into lobules ~1.5 mm across; Voronoi faces of jittered seeds, warped."
+    },
+    {
+      "id": "deep-fascia",
+      "scene": "block",
+      "layer": "hypodermis",
+      "modelled": "Investing deep fascia, 0.28 mm."
+    },
+    {
+      "id": "hair-shaft",
+      "scene": "block",
+      "layer": "appendages",
+      "modelled": "Terminal hair 72 µm thick (cuticle, cortex, medulla not separated), from the keratogenous zone above the papilla to 1.7 mm beyond the skin, leaning with the follicle (55° to the surface)."
+    },
+    {
+      "id": "inner-root-sheath",
+      "scene": "block",
+      "layer": "appendages",
+      "modelled": "Henle and Huxley layers and cuticle (not separated): 14 µm thick around the shaft, from the bulb to the isthmus."
+    },
+    {
+      "id": "hair-follicle",
+      "scene": "block",
+      "layer": "appendages",
+      "modelled": "Outer root sheath with the glassy membrane and connective-tissue sheath (~65 µm), continuous with the epidermis at the infundibulum (ostium ~0.18 mm)."
+    },
+    {
+      "id": "hair-bulb",
+      "scene": "block",
+      "layer": "appendages",
+      "modelled": "Hair bulb ~0.34 mm across: the matrix (with melanocytes) cupped around the dermal papilla, at the dermis–hypodermis junction (anagen terminal follicle)."
+    },
+    {
+      "id": "hair-papilla",
+      "scene": "block",
+      "layer": "appendages",
+      "modelled": "Dermal (hair) papilla: a pear-shaped knot of specialised fibroblasts and capillaries, ~0.14 × 0.28 mm, with its stalk joining the connective-tissue sheath."
+    },
+    {
+      "id": "arrector-pili",
+      "scene": "block",
+      "layer": "appendages",
+      "modelled": "Smooth-muscle bundle ~80 µm thick from the follicle bulge to the papillary dermis, on the obtuse-angle side; it fans into three slips at its upper end."
+    },
+    {
+      "id": "sebaceous-gland",
+      "scene": "block",
+      "layer": "appendages",
+      "modelled": "Holocrine gland of four acini (~0.25–0.3 mm) in the angle between the follicle and the arrector pili; its short duct opens into the follicle canal ~0.5 mm below the surface."
+    },
+    {
+      "id": "eccrine-gland",
+      "scene": "block",
+      "layer": "appendages",
+      "modelled": "Four merocrine sweat glands (one thin-skin, three thick-skin; real density 100–600 per cm²): secretory coil ~0.3–0.4 mm in the deep dermis, a straight dermal duct to the tip of a rete ridge, and a spiral intra-epidermal duct (acrosyringium) to a pore — on a ridge crest in thick skin. Tubules hollow, ~50 µm across."
+    },
+    {
+      "id": "apocrine-gland",
+      "scene": "block",
+      "layer": "appendages",
+      "modelled": "Apocrine gland of axillary type: a coil ~0.8 mm across of wide tubules (~120 µm, large lumen) at the dermis–hypodermis junction; its duct opens into the follicle infundibulum above the sebaceous duct."
+    },
+    {
+      "id": "meissner-corpuscle",
+      "scene": "block",
+      "layer": "receptors",
+      "modelled": "12 encapsulated corpuscles ~45 × 95 µm in the dermal papillae of thick skin: stacked flattened lamellar (Schwann) cells with the axon winding between them, long axis perpendicular to the surface."
+    },
+    {
+      "id": "merkel-discs",
+      "scene": "block",
+      "layer": "receptors",
+      "modelled": "Merkel cell–neurite complexes in the basal layer: a row at the tip of a primary rete ridge (thick skin) and a touch dome beside the hair (thin skin). Each: a Merkel cell over a disc-shaped Aβ terminal; drawn ×1.3 so they show at block scale."
+    },
+    {
+      "id": "pacinian-corpuscle",
+      "scene": "block",
+      "layer": "receptors",
+      "modelled": "Two lamellated corpuscles (~1.0 × 0.6 and 0.8 × 0.5 mm) in the subcutaneous fat: concentric lamellae (6 and 5 drawn; real corpuscles have 20–60) with fluid between them, round an inner core holding the unmyelinated axon terminal."
+    },
+    {
+      "id": "ruffini-ending",
+      "scene": "block",
+      "layer": "receptors",
+      "modelled": "Two spindle-shaped Ruffini endings (~0.76 × 0.08 mm) in the reticular dermis, aligned with the collagen; branched terminals among the collagen fibres at each pole."
+    },
+    {
+      "id": "free-nerve-endings",
+      "scene": "block",
+      "layer": "receptors",
+      "modelled": "34 thin (Aδ and C) fibres from the subepidermal plexus that lose their Schwann cells at the basement membrane and end among the keratinocytes up to the granular layer; drawn ~8 µm thick (real 0.5–2 µm) so they show."
+    },
+    {
+      "id": "hair-follicle-plexus",
+      "scene": "block",
+      "layer": "receptors",
+      "modelled": "Lanceolate endings (palisade parallel to the follicle) and circumferential fibres around the follicle at the level of the bulge, below the sebaceous gland."
+    },
+    {
+      "id": "superficial-plexus",
+      "scene": "block",
+      "layer": "vessels",
+      "modelled": "Subpapillary (superficial) plexus at the papillary–reticular junction: arterioles (~20 µm, red) with paired, slightly deeper venules (~28 µm, blue); 218 capillary loops (~9 µm) rise into the dermal papillae (shown in the papillae near the standard sections and a sample elsewhere)."
+    },
+    {
+      "id": "deep-plexus",
+      "scene": "block",
+      "layer": "vessels",
+      "modelled": "Deep (cutaneous) plexus at the dermis–hypodermis junction: arterioles ~60 µm and venules ~90 µm; communicating (candelabra) vessels up to the superficial plexus; a perforating artery and vein through the deep fascia; branches to the hair papilla, the sweat-gland coils and the fat lobules."
+    },
+    {
+      "id": "lymphatic-vessels",
+      "scene": "block",
+      "layer": "vessels",
+      "modelled": "Blind-ended initial lymphatics in the papillary dermis drain to a superficial lymphatic plexus below the venous plexus; valved (beaded) collectors run down through the dermis to a deep plexus and out beside the perforating vessels."
+    },
+    {
+      "id": "cutaneous-nerve",
+      "scene": "block",
+      "layer": "nerves",
+      "modelled": "A cutaneous nerve (~145 µm) in the subcutaneous fat; ascending branches form the subepidermal plexus and supply the Meissner, Merkel, Ruffini and Pacinian endings and the follicle plexus; fine sympathetic fibres reach the arrector pili and the sweat glands."
+    }
+  ]
+}

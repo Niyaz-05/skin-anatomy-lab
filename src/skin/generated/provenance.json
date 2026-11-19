@@ -1,0 +1,403 @@
+{
+  "output": {
+    "file": "public/models/skin.glb",
+    "bytes": 7872904,
+    "sha256": "b213486268ed2b50fe6a968f647c4c9064c4843cc970ec9c69682c1744229543",
+    "triangles": 365974,
+    "sourceTriangles": 53054
+  },
+  "sources": {
+    "bodyparts3d": {
+      "name": "BodyParts3D 4.0 (Database Center for Life Science), via the Human Atlas build",
+      "license": "CC-BY-4.0",
+      "intermediate": "github.com/Niyaz-05/human-atlas, commit 76f069640f2c3dd40a58d1556896ac25008f592e",
+      "atlasJsonSha256": "c359f4bcd2cba90b7411d66d5e9fc04dc81294d46cd5c1e8b212c824f2e5bbee",
+      "chunkSha256": {
+        "body-10.bin": "4a959d998acd35cf88518a0f2f8ab99b42d9f69c7ce0d6a814df315eeac807ac",
+        "body-11.bin": "e8c1afe7f30fe710ad164ec9cd2287a32881606e7eb590af47d76b3f84405027"
+      },
+      "parts": {
+        "body-skin": [
+          "FJ2810 Skin"
+        ],
+        "scalp-hair": [
+          "FJ2813 Hair of head"
+        ],
+        "pubic-hair": [
+          "FJ2815 Pubic hair"
+        ]
+      }
+    }
+  },
+  "frames": {
+    "body": "BodyParts3D metres, unchanged (+x patient’s left, +y up, +z anterior).",
+    "block": "Modelled at 1 unit = 1 mm; origin at the centre of the skin surface; +y outwards; thin skin at −x, thick skin at +x (boundary x = 0.6, blended over 0.35–0.85)."
+  },
+  "bodyLabels": {
+    "regions": [
+      {
+        "id": "head-neck",
+        "label": "Head and neck",
+        "percent": 9,
+        "measuredPercent": 8.360965
+      },
+      {
+        "id": "arm-left",
+        "label": "Left upper limb",
+        "percent": 9,
+        "measuredPercent": 9.497173
+      },
+      {
+        "id": "arm-right",
+        "label": "Right upper limb",
+        "percent": 9,
+        "measuredPercent": 9.541838
+      },
+      {
+        "id": "trunk-anterior",
+        "label": "Anterior trunk",
+        "percent": 18,
+        "measuredPercent": 17.351509
+      },
+      {
+        "id": "trunk-posterior",
+        "label": "Posterior trunk (with buttocks)",
+        "percent": 18,
+        "measuredPercent": 17.188755
+      },
+      {
+        "id": "leg-left",
+        "label": "Left lower limb",
+        "percent": 18,
+        "measuredPercent": 18.43255
+      },
+      {
+        "id": "leg-right",
+        "label": "Right lower limb",
+        "percent": 18,
+        "measuredPercent": 18.428179
+      },
+      {
+        "id": "perineum",
+        "label": "Perineum and genitalia",
+        "percent": 1,
+        "measuredPercent": 1.19903
+      }
+    ],
+    "dermatomeAreaPercent": {
+      "C6": 2.803535,
+      "C7": 1.461722,
+      "C8": 4.042113,
+      "L1": 5.615374,
+      "C5": 6.796072,
+      "T1": 2.228399,
+      "C4": 6.091856,
+      "T4": 2.407865,
+      "T2": 2.435506,
+      "T3": 1.993777,
+      "T5": 1.866816,
+      "S1": 6.920893,
+      "T6": 1.98408,
+      "L2": 6.1085,
+      "T12": 3.064608,
+      "L3": 6.210777,
+      "T11": 2.959718,
+      "S2": 5.085162,
+      "T7": 1.817604,
+      "L5": 6.684439,
+      "T10": 2.144518,
+      "T8": 1.864201,
+      "T9": 2.180849,
+      "L4": 4.44342,
+      "S3": 2.982163,
+      "V": 3.088238,
+      "C2": 3.612315,
+      "C3": 0.925574,
+      "S4": 0.149216,
+      "S5": 0.030689
+    },
+    "landmarks": {
+      "crotchY": 0.77,
+      "axillaY": {
+        "left": 1.185,
+        "right": 1.185
+      },
+      "neckBaseY": 1.465,
+      "neckNarrowestY": 1.505,
+      "topY": 1.719431
+    },
+    "totalAreaM2": 3.498279
+  },
+  "dimensions": {
+    "thinEpidermisMm": {
+      "model": 0.121849,
+      "expected": "0.07–0.12 mm (thin, hairy skin)",
+      "sources": [
+        "ross-8",
+        "openstax-ch5"
+      ]
+    },
+    "thickEpidermisMm": {
+      "model": 0.777071,
+      "expected": "0.6–1.5 mm (palms, soles; 5 strata)",
+      "sources": [
+        "ross-8",
+        "openstax-ch5"
+      ]
+    },
+    "corneumMm": {
+      "model": [
+        0.018,
+        0.4
+      ],
+      "expected": "thin skin 10–20 µm; palm 0.2–0.6 mm",
+      "sources": [
+        "ross-8"
+      ]
+    },
+    "lucidumMm": {
+      "model": 0.035,
+      "expected": "thick skin only, 20–40 µm",
+      "sources": [
+        "ross-8",
+        "openstax-ch5"
+      ]
+    },
+    "basaleMm": {
+      "model": [
+        0.011,
+        0.016
+      ],
+      "expected": "one cell, ~10–15 µm",
+      "sources": [
+        "ross-8"
+      ]
+    },
+    "dermisMm": {
+      "model": [
+        1.902304,
+        2.271963
+      ],
+      "expected": "1–3 mm (thicker on palms and back)",
+      "sources": [
+        "ross-8",
+        "openstax-ch5"
+      ]
+    },
+    "hypodermisMm": {
+      "model": [
+        3.211876,
+        2.206492
+      ],
+      "expected": "very variable (mm to cm); cut to fit the block",
+      "sources": [
+        "openstax-ch5"
+      ]
+    },
+    "frictionRidgeSpacingMm": {
+      "model": 0.46,
+      "expected": "~0.4–0.5 mm",
+      "sources": [
+        "ross-8"
+      ]
+    },
+    "hairShaftDiameterUm": {
+      "model": 72,
+      "expected": "terminal hair 50–100 µm",
+      "sources": [
+        "ross-8"
+      ]
+    },
+    "follicleAngleDeg": {
+      "model": 55,
+      "expected": "~30–60° to the surface",
+      "sources": [
+        "ross-8"
+      ]
+    },
+    "meissnerSizeUm": {
+      "model": "~45 × 95",
+      "expected": "30–80 × 80–150 µm, in dermal papillae of glabrous skin",
+      "sources": [
+        "ross-8",
+        "kandel-6"
+      ]
+    },
+    "pacinianSizeMm": {
+      "model": "1.04 × 0.64; 0.84 × 0.52",
+      "expected": "~1 × 0.6 mm (up to 4 mm), 20–60 lamellae, deep dermis/hypodermis",
+      "sources": [
+        "ross-8",
+        "kandel-6"
+      ]
+    },
+    "ruffiniLengthMm": {
+      "model": 0.76,
+      "expected": "0.5–2 mm spindles in the dermis",
+      "sources": [
+        "kandel-6"
+      ]
+    },
+    "eccrineCoilMm": {
+      "model": "~0.3–0.4",
+      "expected": "coil 0.3–0.5 mm, deep dermis",
+      "sources": [
+        "ross-8"
+      ]
+    },
+    "capillaryLoopUm": {
+      "model": "~9 (arterial limb 8, venous 10)",
+      "expected": "5–10 µm; one loop per papilla",
+      "sources": [
+        "ross-8"
+      ]
+    },
+    "exaggerations": {
+      "model": "free nerve fibres drawn 8 µm (real 0.5–2 µm); Merkel complexes ×1.3; follicle-plexus fibres 9–14 µm; cells at 1/7 density; 4 eccrine glands; 2 Pacinian corpuscles with 5–6 lamellae",
+      "expected": "for visibility at block scale",
+      "sources": []
+    }
+  },
+  "histologyChecks": {
+    "meissnerInPapillae": true,
+    "meissnerInThickSkin": true,
+    "merkelAtBasalLayer": true,
+    "pacinianInHypodermis": true,
+    "ruffiniInReticularDermis": true,
+    "freeEndingsInEpidermis": true,
+    "arrectorInsertsInPapillaryDermis": true,
+    "arrectorOnObtuseSide": true,
+    "sebaceousAboveArrectorBase": true,
+    "bulbAtDermisHypodermisJunction": true,
+    "eccrineCoilsDeep": true,
+    "thickPoresOnRidgeCrests": true,
+    "lucidumOnlyThick": true,
+    "epidermisThinSkin": true,
+    "epidermisThickSkin": true
+  },
+  "changesHere": "BodyParts3D: welded the skin, hair of head and pubic hair; simplified the skin to ~28,000 triangles; added per-vertex region and dermatome labels. The skin block and everything in it are modelled in code (tools/make-skin.mjs, tools/skin-geo.mjs) from the dimensions listed here.",
+  "shadingBake": {
+    "tool": "tools/bake-shading.mjs",
+    "config": {
+      "$comment": "Shading bake for the real-tissue look (tools/bake-shading.mjs). The model holds two scenes in different units: the body (metres) and the skin block (millimetres), so distances and noise frequencies are set per scene/mesh. Block tissue layers are stacked slabs whose interfaces coincide; each slab is shaded only by itself ('self'), so a hidden neighbour never leaves its imprint (peeled layers stay clean) while papillae, ridges and creases still shade their own folds. Appendages, receptors, vessels and nerves shade their own layer. The instanced cells are not shaded (their prototype sits at the origin).",
+      "model": "public/models/skin.glb",
+      "provenance": "src/skin/generated/provenance.json",
+      "attribution": "public/ATTRIBUTION.md",
+      "aoDistance": 0.12,
+      "aoDistanceById": {
+        "body-skin": 0.04,
+        "scalp-hair": 0.02,
+        "pubic-hair": 0.02,
+        "subcutaneous-fat": 0.3,
+        "fibrous-septa": 0.3,
+        "deep-fascia": 0.3,
+        "reticular-dermis": 0.25,
+        "deep-plexus": 0.25,
+        "cutaneous-nerve": 0.25,
+        "pacinian-corpuscle": 0.08,
+        "meissner-corpuscle": 0.02,
+        "merkel-discs": 0.01,
+        "free-nerve-endings": 0.02,
+        "hair-follicle-plexus": 0.03
+      },
+      "occludersById": {
+        "stratum-corneum": "self",
+        "stratum-lucidum": "self",
+        "stratum-granulosum": "self",
+        "stratum-spinosum": "self",
+        "stratum-basale": "self",
+        "papillary-dermis": "self",
+        "reticular-dermis": "self",
+        "subcutaneous-fat": "self",
+        "deep-fascia": "self",
+        "fibrous-septa": "self",
+        "collagen-bundles": "self",
+        "melanocytes": [],
+        "langerhans-cells": []
+      },
+      "rays": 40,
+      "rayOffset": 0.00002,
+      "noiseFrequency": 6,
+      "noiseFrequencyByScene": {
+        "body": 60,
+        "block": 6
+      },
+      "occluders": {
+        "body": [
+          "body"
+        ],
+        "epidermis": [
+          "epidermis"
+        ],
+        "dermis": [
+          "dermis"
+        ],
+        "hypodermis": [
+          "hypodermis"
+        ],
+        "appendages": [
+          "appendages"
+        ],
+        "receptors": [
+          "receptors"
+        ],
+        "vessels": [
+          "vessels"
+        ],
+        "nerves": [
+          "nerves",
+          "receptors"
+        ]
+      },
+      "fat": null
+    },
+    "attribute": "_TISSUE (VEC4 unsigned byte, normalised): r ambient occlusion, g mottling noise, b fat proximity, a unused",
+    "unbakedSha256": "0957ee4a16ec84e0f769b769c8d8e49921cd587ffc475fffc90b23a68660be09",
+    "unbakedOutput": {
+      "bytes": 7118380
+    },
+    "vertices": 187367,
+    "layers": {
+      "body": {
+        "meshes": 3,
+        "meanAO": 0.816,
+        "vertices": 17973
+      },
+      "epidermis": {
+        "meshes": 7,
+        "meanAO": 0.819,
+        "vertices": 62475
+      },
+      "dermis": {
+        "meshes": 3,
+        "meanAO": 0.935,
+        "vertices": 19918
+      },
+      "hypodermis": {
+        "meshes": 3,
+        "meanAO": 0.862,
+        "vertices": 6724
+      },
+      "appendages": {
+        "meshes": 9,
+        "meanAO": 0.601,
+        "vertices": 25295
+      },
+      "receptors": {
+        "meshes": 6,
+        "meanAO": 0.758,
+        "vertices": 16503
+      },
+      "vessels": {
+        "meshes": 3,
+        "meanAO": 0.782,
+        "vertices": 30953
+      },
+      "nerves": {
+        "meshes": 1,
+        "meanAO": 0.786,
+        "vertices": 7526
+      }
+    }
+  }
+}

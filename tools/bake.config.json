@@ -1,0 +1,56 @@
+{
+  "$comment": "Shading bake for the real-tissue look (tools/bake-shading.mjs). The model holds two scenes in different units: the body (metres) and the skin block (millimetres), so distances and noise frequencies are set per scene/mesh. Block tissue layers are stacked slabs whose interfaces coincide; each slab is shaded only by itself ('self'), so a hidden neighbour never leaves its imprint (peeled layers stay clean) while papillae, ridges and creases still shade their own folds. Appendages, receptors, vessels and nerves shade their own layer. The instanced cells are not shaded (their prototype sits at the origin).",
+  "model": "public/models/skin.glb",
+  "provenance": "src/skin/generated/provenance.json",
+  "attribution": "public/ATTRIBUTION.md",
+  "aoDistance": 0.12,
+  "aoDistanceById": {
+    "body-skin": 0.04,
+    "scalp-hair": 0.02,
+    "pubic-hair": 0.02,
+    "subcutaneous-fat": 0.3,
+    "fibrous-septa": 0.3,
+    "deep-fascia": 0.3,
+    "reticular-dermis": 0.25,
+    "deep-plexus": 0.25,
+    "cutaneous-nerve": 0.25,
+    "pacinian-corpuscle": 0.08,
+    "meissner-corpuscle": 0.02,
+    "merkel-discs": 0.01,
+    "free-nerve-endings": 0.02,
+    "hair-follicle-plexus": 0.03
+  },
+  "occludersById": {
+    "stratum-corneum": "self",
+    "stratum-lucidum": "self",
+    "stratum-granulosum": "self",
+    "stratum-spinosum": "self",
+    "stratum-basale": "self",
+    "papillary-dermis": "self",
+    "reticular-dermis": "self",
+    "subcutaneous-fat": "self",
+    "deep-fascia": "self",
+    "fibrous-septa": "self",
+    "collagen-bundles": "self",
+    "melanocytes": [],
+    "langerhans-cells": []
+  },
+  "rays": 40,
+  "rayOffset": 0.00002,
+  "noiseFrequency": 6,
+  "noiseFrequencyByScene": {
+    "body": 60,
+    "block": 6
+  },
+  "occluders": {
+    "body": ["body"],
+    "epidermis": ["epidermis"],
+    "dermis": ["dermis"],
+    "hypodermis": ["hypodermis"],
+    "appendages": ["appendages"],
+    "receptors": ["receptors"],
+    "vessels": ["vessels"],
+    "nerves": ["nerves", "receptors"]
+  },
+  "fat": null
+}
